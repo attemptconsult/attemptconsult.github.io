@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Attemptconsult.GitHub.io by attemptconsult</title>
+    {% include head.html %}
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
-
-        <header>
-          <h1>Análisis de datos del congreso de la República de Colombia</h1>
-          <h2>website</h2>
+     <div class="container azul">
+        <header class="top row gutters{% if page.title == "Home" %} fadeInLeft animated{% endif %}">
+        <div class="col span_2 center">
+          <!-- TODO: add baseurl to the logo link -->
+          <a href="{{ site.url }}" id="logo" title="{{ site.title }}"
+             style="background-image: url({{site.baseurl}}/public/images/logo.png);"></a>
+        </div>
+        {% include navigation.html %}
+          <h1>La Rama Ciudadana</h1>
+          <h2>David Zarruk Valencia y Rodrigo Azuero Melo</h2>
         </header>
 
 
@@ -37,16 +32,44 @@
 
 
           </section>
+          <h3> Asistencia de Congresistas a las plenarias del Senado y de la Cámara de Representantes de Colombia. Periodo 2014-2018</h3>
+       
 
-       <section id="downloads" class="clearfix">  
-          <a href="{{site.baseurl}}/congreso.html" id="view-on-github" class="button"><span>Palabras</span></a>
-        
+        <section id="downloads" class="clearfix">  
+          <a href="{{site.baseurl}}/asistencia.html" id="view-on-github" class="button"><span>Asistencia Senado</span></a>
         </section>
 
         <section id="downloads" class="clearfix">  
-          <a href="{{site.baseurl}}/asistencia.html" id="view-on-github" class="button"><span>Asistencia</span></a>
+          <a href="{{site.baseurl}}/asistencia.html" id="view-on-github" class="button"><span>Asistencia Cámara de Representantes</span></a>
+        </section>
+
+        <p> </p>
+
+        <h3> Análisis de palabras mencionadas en las actas de la Plenaria del Senado de la República. 2000-2016</h3>
+
+
+
+        <section id="downloads" class="clearfix">  
+          <a href="{{site.baseurl}}/congreso.html" id="view-on-github" class="button"><span>Palabras plenaria Senado</span></a>
         
         </section>
+
+        <footer>
+        <p>
+Contáctenos: 
+<a href="mailto:davidza@sas.upenn.edu" >davidza@sas.upenn.edu</a> o <a href="mailto:razu@sas.upenn.edu" >razu@sas.upenn.edu</a> 
+</p>
+
+      </footer>
+    </div>
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="{{site.baseurl}}/public/js/jquery.fitvids.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("article").fitVids();
+      });
+    </script>
 
                   <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
