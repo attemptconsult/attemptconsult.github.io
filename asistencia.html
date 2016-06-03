@@ -748,10 +748,11 @@ return(data);
 function drawChartBubbleChartID1072f1e4e12() {
 var data = gvisDataBubbleChartID1072f1e4e12();
 var options = {
+  backgroundColor:'none',
   title: '           Asistencia a Plenarias del Senado de la Republica',
-  titleTextStyle:{fontSize:48},
+  titleTextStyle:{fontSize:30},
            hAxis: {title: '',ticks: [0], minValue:-2,maxValue:149},
-    vAxis: {title: 'Porcentaje (%) de asistencia'},
+    vAxis: {title: 'Porcentaje (%) de asistencia',ticks: [65,70,75,80,85,90,95,100],maxValue:101},
     bubble: {
       textStyle: {
         fontSize: 12,
@@ -759,8 +760,8 @@ var options = {
       }
     }
 };
-options["width"] =   1500;
-options["height"] =   750;
+options["width"] =   1200;
+options["height"] =   550;
 
 
     var chart = new google.visualization.BubbleChart(
