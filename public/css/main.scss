@@ -13,8 +13,8 @@ $avocado-accent-color: #568203;
 
 /*============================================================================*/
 * {
-  margin: 5;
-  padding: 5;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -24,7 +24,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   color: $contrast-color;
   font-weight: 400;
-  margin-left:70px;
   line-height: 1.5;
 
   -webkit-font-smoothing: antialiased;
@@ -143,7 +142,7 @@ footer {
 
 .container {
   max-width: 1000px;
-  padding: 0 30px;
+  padding: 20 20px;
 }
 
 .center {
