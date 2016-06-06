@@ -4,30 +4,54 @@ layout: default
 
 <head>
 <style>
-img {
-  width:100%;
-  max-width:100%;
-  height:auto;
+
+@media screen and (max-width:600px) and (min-width:10px)
+{
+
+  #tab1 {
+    display: none;
+  }
+
 }
+
+@media screen and (min-width:600px)
+{
+  #tab2 {
+    display: none;
+  }
+
+}
+
 </style>
 </head>
 
 
-
-
-<table  cellspacing="0" cellpadding="0" border="0">
-	<col width="300">
-  <col width="800">
+<table  cellspacing="0" cellpadding="0" border="0" id="tab1" align="center">
   <tr>
-    <td><img src="{{site.baseurl}}/files/photoRodrigo.jpg" alt="HTML5 Icon" align="left"></td>
-    <td>  <p><strong> Rodrigo Azuero Melo</strong></p>  <p align="justify" >  Rodrigo es egresado de los programas de pregrado y maestría en economía de la Universidad de los Andes. Durante el pregrado recibió la distinción "Cum Laude", que se le otorga a aquellos estudiantes que obtienen un promedio en el top 3% de los últimos cinco años de la facultad. Trabajó en el Centro de Estudios de Desarrollo Economico de la Universidad y en el Banco Interamericano de Desarrollo, en Washington. En la actualidad esta finalizando su Ph.D. en economía en la Universidad de Pennsylvania donde trabaja en temas de investigación relacionados con desarrollo económico. Más información en <a href="http://rodrigoazuero.com" id="view-on-github" class="button">rodrigoazuero.com</a>    </p></td>
+    <td id="rodrigoimg1"  style="width:250px" ><img src="{{site.baseurl}}/files/photoRodrigo.jpg" alt="HTML5 Icon"></td>
+    <td id="rodrigo1">  <p><strong> Rodrigo Azuero Melo</strong></p>  <p align="justify" >  Rodrigo es egresado de los programas de pregrado y maestría en economía de la Universidad de los Andes. Durante el pregrado recibió la distinción "Cum Laude", que se le otorga a aquellos estudiantes que obtienen un promedio en el top 3% de los últimos cinco años de la facultad. Trabajó en el Centro de Estudios de Desarrollo Economico de la Universidad y en el Banco Interamericano de Desarrollo, en Washington. En la actualidad esta finalizando su Ph.D. en economía en la Universidad de Pennsylvania donde trabaja en temas de investigación relacionados con desarrollo económico. Más información en <a href="http://rodrigoazuero.com" id="view-on-github" class="button">rodrigoazuero.com</a>    </p></td>
   </tr>
+
   <tr>
-    <td><img src="{{site.baseurl}}/files/photoZarruk.png" alt="HTML5 Icon" align="left"></td>
-    <td> <p><strong> David Zarruk Valencia</strong></p>  <p align="justify" >  David es egresado de los programas de pregrado en matemáticas y economía y del programa de maestría en economía de la Universidad de los Andes. David también recibió el grado "Cum Laude" en economía y obtuvo el segundo mejor puntaje a nivel nacional de las pruebas ECAES en economía. Trabajó en el Centro de Estudios de Desarrollo Económico realizando investigación sobre crimen y conflicto en Colombia. En la actualidad está realizando un Ph.D. en economía en la Universidad de Pennsylvania.   </p></td>
+    <td id="davidimg1"><img src="{{site.baseurl}}/files/photoZarruk.png" alt="HTML5 Icon" align="left"></td>
+    <td id="david1"> <p><strong> David Zarruk Valencia</strong></p>  <p align="justify" >  David es egresado de los programas de pregrado en matemáticas y economía y del programa de maestría en economía de la Universidad de los Andes. David también recibió el grado "Cum Laude" en economía y obtuvo el segundo mejor puntaje a nivel nacional de las pruebas ECAES en economía. Trabajó en el Centro de Estudios de Desarrollo Económico realizando investigación sobre crimen y conflicto en Colombia. En la actualidad está realizando un Ph.D. en economía en la Universidad de Pennsylvania.   </p></td>
   </tr>
 </table>
 
 
 
+<table  cellspacing="0" cellpadding="0" border="0" id="tab2" align="center">
+  <tr>
+    <td id="rodrigoimg1"><img src="{{site.baseurl}}/files/photoRodrigo.jpg" alt="HTML5 Icon"></td>
+  </tr>
+  <tr>
+    <td id="rodrigo1">  <p><strong> Rodrigo Azuero Melo</strong></p>  <p align="justify" >  Rodrigo es egresado de los programas de pregrado y maestría en economía de la Universidad de los Andes. Durante el pregrado recibió la distinción "Cum Laude", que se le otorga a aquellos estudiantes que obtienen un promedio en el top 3% de los últimos cinco años de la facultad. Trabajó en el Centro de Estudios de Desarrollo Economico de la Universidad y en el Banco Interamericano de Desarrollo, en Washington. En la actualidad esta finalizando su Ph.D. en economía en la Universidad de Pennsylvania donde trabaja en temas de investigación relacionados con desarrollo económico. Más información en <a href="http://rodrigoazuero.com" id="view-on-github" class="button">rodrigoazuero.com</a>    </p></td>
+  </tr>
 
+  <tr>
+    <td id="davidimg1"><img src="{{site.baseurl}}/files/photoZarruk.png" alt="HTML5 Icon" align="left"></td>
+  </tr>
+  <tr>
+    <td id="david1"> <p><strong> David Zarruk Valencia</strong></p>  <p align="justify" >  David es egresado de los programas de pregrado en matemáticas y economía y del programa de maestría en economía de la Universidad de los Andes. David también recibió el grado "Cum Laude" en economía y obtuvo el segundo mejor puntaje a nivel nacional de las pruebas ECAES en economía. Trabajó en el Centro de Estudios de Desarrollo Económico realizando investigación sobre crimen y conflicto en Colombia. En la actualidad está realizando un Ph.D. en economía en la Universidad de Pennsylvania.   </p></td>
+  </tr>
+</table>
