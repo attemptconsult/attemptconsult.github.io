@@ -1,0 +1,44 @@
+
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('visualization', '1', {'packages':['corechart','controls']});
+      google.charts.setOnLoadCallback(drawSeriesChart);
+
+      function dataLoad () {
+        var data = new google.visualization.DataTable();
+        var datajson =
+        [
+        [
+         "Luis Evelis Andrade Casamá",
+        6,
+        97.45762712,
+        "MAIS",
+        1.026086956 
+        ]
+        ];
+        data.addColumn('string','Senador');
+        data.addColumn('number','Numero');
+        data.addColumn('number','Asistencia');
+        data.addColumn('string','Partido');
+        data.addColumn('number','Tamaño');
+        data.addRows(datajson);
+        return(data);
+        }
+
+    function drawSeriesChart() {
+
+      var data = dataLoad();
+
+      return(data[1])
+
+
+    }
+    </script>
+  </head>
+  <body>
+    <div id="drawSeriesChart" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

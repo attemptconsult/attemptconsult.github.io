@@ -1,0 +1,817 @@
+
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('visualization', '1', {'packages':['corechart','controls']});
+      google.charts.setOnLoadCallback(drawSeriesChart);
+
+      function dataLoad () {
+        var data = new google.visualization.DataTable();
+        var datajson =
+        [
+        [
+         "Luis Evelis Andrade Casamá",
+        6,
+        97.45762712,
+        "MAIS",
+        1.026086956 
+        ],
+        [
+         "Marco Aníbal Avirama Avirama",
+        12,
+        100,
+        "ASI",
+        1 
+        ],
+        [
+         "María Del Rosario Guerra De La Espriella",
+        18,
+        97.45762712,
+        "Centro Democrático",
+        1.026086956 
+        ],
+        [
+         "Paloma Susana Valencia Laserna",
+        19,
+        94.91525424,
+        "Centro Democrático",
+        1.053571429 
+        ],
+        [
+         "Susana Correa Borrero",
+        21,
+        98.30508475,
+        "Centro Democrático",
+        1.017241379 
+        ],
+        [
+         "Ruby Thania Vega De Plazas",
+        22,
+        91.52542373,
+        "Centro Democrático",
+        1.092592593 
+        ],
+        [
+         "Paola Andrea Holguín Moreno",
+        23,
+        99.15254237,
+        "Centro Democrático",
+        1.008547008 
+        ],
+        [
+         "Nohora Stella Tovar Rey",
+        24,
+        95.76271186,
+        "Centro Democrático",
+        1.044247788 
+        ],
+        [
+         "Álvaro  Uribe Vélez",
+        25,
+        97.45762712,
+        "Centro Democrático",
+        1.026086956 
+        ],
+        [
+         "Alfredo Rangel Suárez",
+        26,
+        100,
+        "Centro Democrático",
+        1 
+        ],
+        [
+         "Iván Duque Márquez",
+        27,
+        100,
+        "Centro Democrático",
+        1 
+        ],
+        [
+         "Fernando Nicolás Araujo Rumie",
+        28,
+        99.15254237,
+        "Centro Democrático",
+        1.008547008 
+        ],
+        [
+         "José Obdulio Gaviria Vélez",
+        29,
+        98.30508475,
+        "Centro Democrático",
+        1.017241379 
+        ],
+        [
+         "Orlando Castañeda Serrano",
+        30,
+        95.76271186,
+        "Centro Democrático",
+        1.044247788 
+        ],
+        [
+         "Daniel Alberto Cabrales Castillo",
+        31,
+        98.30508475,
+        "Centro Democrático",
+        1.017241379 
+        ],
+        [
+         "Everth  Bustamante García",
+        32,
+        96.61016949,
+        "Centro Democrático",
+        1.035087719 
+        ],
+        [
+         "Alfredo Ramos Maya",
+        33,
+        100,
+        "Centro Democrático",
+        1 
+        ],
+        [
+         "Jaime Alejandro Amín Hernández",
+        34,
+        98.30508475,
+        "Centro Democrático",
+        1.017241379 
+        ],
+        [
+         "Ernesto  Macías Tovar",
+        35,
+        100,
+        "Centro Democrático",
+        1 
+        ],
+        [
+         "Carlos Felipe Mejía Mejía",
+        36,
+        100,
+        "Centro Democrático",
+        1 
+        ],
+        [
+         "Honorio Miguel Henríquez Pinedo",
+        37,
+        100,
+        "Centro Democrático",
+        1 
+        ],
+        [
+         "Claudia Nayibe López Hernández",
+        43,
+        99.15254237,
+        "Partido Verde",
+        1.008547008 
+        ],
+        [
+         "Antonio José Navarro Wolff",
+        44,
+        95.76271186,
+        "Partido Verde",
+        1.044247788 
+        ],
+        [
+         "Jorge Iván Ospina Gómez",
+        45,
+        98.30508475,
+        "Partido Verde",
+        1.017241379 
+        ],
+        [
+         "Iván Leonidas Name Vásquez",
+        46,
+        91.52542373,
+        "Partido Verde",
+        1.092592593 
+        ],
+        [
+         "Jorge Eliéser Prieto Riveros",
+        47,
+        95.76271186,
+        "Partido Verde",
+        1.044247788 
+        ],
+        [
+         "Daira De Jesús Galvis Méndez",
+        53,
+        86.44067797,
+        "Cambio Radical",
+        1.156862745 
+        ],
+        [
+         "Rosmery  Martínez Rosales",
+        54,
+        97.45762712,
+        "Cambio Radical",
+        1.026086956 
+        ],
+        [
+         "Arturo  Char Chaljub",
+        55,
+        78.81355932,
+        "Cambio Radical",
+        1.268817204 
+        ],
+        [
+         "Carlos Fernando Galán Pachón",
+        56,
+        99.15254237,
+        "Cambio Radical",
+        1.008547008 
+        ],
+        [
+         "Germán Varón Cotrino",
+        57,
+        98.30508475,
+        "Cambio Radical",
+        1.017241379 
+        ],
+        [
+         "Juan Carlos Restrepo Escobar",
+        58,
+        92.37288136,
+        "Cambio Radical",
+        1.082568807 
+        ],
+        [
+         "Bernabé  Celis Carrillo",
+        59,
+        98.30508475,
+        "Cambio Radical",
+        1.017241379 
+        ],
+        [
+         "Carlos Fernando Motoa Solarte",
+        60,
+        97.45762712,
+        "Cambio Radical",
+        1.026086956 
+        ],
+        [
+         "Antonio Del Cristo Guerra De La Espriella",
+        61,
+        97.45762712,
+        "Cambio Radical",
+        1.026086956 
+        ],
+        [
+         "Nora María García Burgos",
+        67,
+        97.45762712,
+        "Partido Conservador",
+        1.026086956 
+        ],
+        [
+         "Yamina Del Carmen Pestana Rojas",
+        68,
+        94.91525424,
+        "Partido Conservador",
+        1.053571429 
+        ],
+        [
+         "Nidia Marcela Osorio Salgado",
+        69,
+        97.45762712,
+        "Partido Conservador",
+        1.026086956 
+        ],
+        [
+         "Myriam Alicia Paredes Aguirre",
+        70,
+        96.61016949,
+        "Partido Conservador",
+        1.035087719 
+        ],
+        [
+         "Olga Lucía Suárez Mira",
+        71,
+        96.61016949,
+        "Partido Conservador",
+        1.035087719 
+        ],
+        [
+         "Nadya Georgette Blel Scaff",
+        72,
+        94.06779661,
+        "Partido Conservador",
+        1.063063063 
+        ],
+        [
+         "Roberto Víctor Gerlein Echeverría",
+        73,
+        72.88135593,
+        "Partido Conservador",
+        1.372093023 
+        ],
+        [
+         "Efrain José Cepeda Sarabia",
+        74,
+        98.30508475,
+        "Partido Conservador",
+        1.017241379 
+        ],
+        [
+         "Laureano Augusto Acuña Díaz",
+        75,
+        86.44067797,
+        "Partido Conservador",
+        1.156862745 
+        ],
+        [
+         "Javier Mauricio Delgado Martínez",
+        76,
+        95.76271186,
+        "Partido Conservador",
+        1.044247788 
+        ],
+        [
+         "Carlos Eduardo Enríquez Maya",
+        77,
+        97.45762712,
+        "Partido Conservador",
+        1.026086956 
+        ],
+        [
+         "Hernán Francisco Andrade Serrano",
+        78,
+        98.30508475,
+        "Partido Conservador",
+        1.017241379 
+        ],
+        [
+         "Jorge Hernando Pedraza Gutiérrez",
+        79,
+        94.91525424,
+        "Partido Conservador",
+        1.053571429 
+        ],
+        [
+         "Juan Samy Merheg Marún",
+        80,
+        94.91525424,
+        "Partido Conservador",
+        1.053571429 
+        ],
+        [
+         "Juan Diego Gómez Jiménez",
+        81,
+        88.13559322,
+        "Partido Conservador",
+        1.134615385 
+        ],
+        [
+         "Juan Manuel Corzo Román",
+        82,
+        90.6779661,
+        "Partido Conservador",
+        1.102803738 
+        ],
+        [
+         "Luis Emilio Sierra Grajales",
+        83,
+        93.22033898,
+        "Partido Conservador",
+        1.072727273 
+        ],
+        [
+         "Fernando Eustacio Tamayo Tamayo",
+        84,
+        100,
+        "Partido Conservador",
+        1 
+        ],
+        [
+         "Arleth Patricia Casado De López",
+        90,
+        99.15254237,
+        "Partido Liberal",
+        1.008547008 
+        ],
+        [
+         "Viviane Aleyda Morales Hoyos",
+        91,
+        96.61016949,
+        "Partido Liberal",
+        1.035087719 
+        ],
+        [
+         "Soíia Alejandra Gaviria Correa",
+        92,
+        94.06779661,
+        "Partido Liberal",
+        1.063063063 
+        ],
+        [
+         "Horacio  Serpa Uribe",
+        93,
+        94.91525424,
+        "Partido Liberal",
+        1.053571429 
+        ],
+        [
+         "Andrés Cristo Bustos",
+        94,
+        99.15254237,
+        "Partido Liberal",
+        1.008547008 
+        ],
+        [
+         "Juan Manuel Galán Pachón",
+        95,
+        86.44067797,
+        "Partido Liberal",
+        1.156862745 
+        ],
+        [
+         "Guillermo García Realpe",
+        96,
+        96.61016949,
+        "Partido Liberal",
+        1.035087719 
+        ],
+        [
+         "Álvaro Antonio Ashton Giraldo",
+        97,
+        97.45762712,
+        "Partido Liberal",
+        1.026086956 
+        ],
+        [
+         "Lidio Arturo García Turbay",
+        98,
+        88.98305085,
+        "Partido Liberal",
+        1.123809524 
+        ],
+        [
+         "Jaime Enrique Durán Barrera",
+        99,
+        92.37288136,
+        "Partido Liberal",
+        1.082568807 
+        ],
+        [
+         "Luis Fernando Velasco Chaves",
+        100,
+        99.15254237,
+        "Partido Liberal",
+        1.008547008 
+        ],
+        [
+         "Mario Alberto Fernández Alcocer",
+        102,
+        92.37288136,
+        "Partido Liberal",
+        1.082568807 
+        ],
+        [
+         "Édinson Delgado Ruiz",
+        103,
+        99.15254237,
+        "Partido Liberal",
+        1.008547008 
+        ],
+        [
+         "Rodrigo  Villalba Mosquera",
+        104,
+        99.15254237,
+        "Partido Liberal",
+        1.008547008 
+        ],
+        [
+         "Javier Tato Álvarez Montenegro",
+        105,
+        86.44067797,
+        "Partido Liberal",
+        1.156862745 
+        ],
+        [
+         "Luis Fernando Duque García",
+        106,
+        78.81355932,
+        "Partido Liberal",
+        1.268817204 
+        ],
+        [
+         "Doris Clemencia Vega Quiroz",
+        112,
+        97.45762712,
+        "Opción Ciudadana",
+        1.026086956 
+        ],
+        [
+         "Teresita García Romero",
+        113,
+        93.22033898,
+        "Opción Ciudadana",
+        1.072727273 
+        ],
+        [
+         "Nerthink Mauricio Aguilar Hurtado",
+        114,
+        96.61016949,
+        "Opción Ciudadana",
+        1.035087719 
+        ],
+        [
+         "Antonio José Correa Jiménez",
+        115,
+        98.30508475,
+        "Opción Ciudadana",
+        1.017241379 
+        ],
+        [
+         "Julio Miguel Guerra Sotto",
+        116,
+        89.83050847,
+        "Opción Ciudadana",
+        1.113207547 
+        ],
+        [
+         "Jorge Enrique Robledo Castillo",
+        122,
+        100,
+        "Polo Democrático",
+        1 
+        ],
+        [
+         "Iván Cepeda Castro",
+        123,
+        98.30508475,
+        "Polo Democrático",
+        1.017241379 
+        ],
+        [
+         "Alexander  López Maya",
+        124,
+        86.44067797,
+        "Polo Democrático",
+        1.156862745 
+        ],
+        [
+         "Jesús Alberto Castilla Salazar",
+        125,
+        94.91525424,
+        "Polo Democrático",
+        1.053571429 
+        ],
+        [
+         "Segundo Senén Niño Avendaño",
+        126,
+        89.83050847,
+        "Polo Democrático",
+        1.113207547 
+        ],
+        [
+         "Maritza Martínez Aristizábal",
+        132,
+        100,
+        "Partido de la U",
+        1 
+        ],
+        [
+         "Sandra Elena Villadiego Villadiego",
+        133,
+        96.61016949,
+        "Partido de la U",
+        1.035087719 
+        ],
+        [
+         "Musa Besaile Fayad",
+        134,
+        94.91525424,
+        "Partido de la U",
+        1.053571429 
+        ],
+        [
+         "Bernardo Miguel Elías Vidal",
+        135,
+        95.76271186,
+        "Partido de la U",
+        1.044247788 
+        ],
+        [
+         "José David Name Cardozo",
+        136,
+        95.76271186,
+        "Partido de la U",
+        1.044247788 
+        ],
+        [
+         "Roosvelt Rodríguez Rengifo",
+        137,
+        87.28813559,
+        "Partido de la U",
+        1.145631068 
+        ],
+        [
+         "José Alfredo Gnecco Zuleta",
+        138,
+        91.52542373,
+        "Partido de la U",
+        1.092592593 
+        ],
+        [
+         "Oscar Mauricio Lizcano Arango",
+        139,
+        96.61016949,
+        "Partido de la U",
+        1.035087719 
+        ],
+        [
+         "Miguel  Amin Escaf",
+        140,
+        96.61016949,
+        "Partido de la U",
+        1.035087719 
+        ],
+        [
+         "Eduardo Enrique Pulgar Daza",
+        141,
+        95.76271186,
+        "Partido de la U",
+        1.044247788 
+        ],
+        [
+         "Roy Leonardo Barreras Montealegre",
+        142,
+        97.45762712,
+        "Partido de la U",
+        1.026086956 
+        ],
+        [
+         "Martín Emilio Morales Diz",
+        143,
+        91.52542373,
+        "Partido de la U",
+        1.092592593 
+        ],
+        [
+         "Armando Alberto Benedetti Villaneda",
+        144,
+        91.52542373,
+        "Partido de la U",
+        1.092592593 
+        ],
+        [
+         "William Jimmy Chamorro Cruz",
+        145,
+        100,
+        "Partido de la U",
+        1 
+        ],
+        [
+         "Germán Darío Hoyos Giraldo",
+        146,
+        85.59322034,
+        "Partido de la U",
+        1.168316832 
+        ],
+        [
+         "Milton Arlex Rodríguez Sarmiento",
+        147,
+        93.22033898,
+        "Partido de la U",
+        1.072727273 
+        ],
+        [
+         "Andrés Felipe García Zuccardi",
+        148,
+        93.22033898,
+        "Partido de la U",
+        1.072727273 
+        ],
+        [
+         "Manuel Mesías Enríquez Rosero",
+        149,
+        99.15254237,
+        "Partido de la U",
+        1.008547008 
+        ],
+        [
+         "Ángel Custodio Cabrera Báez",
+        150,
+        96.61016949,
+        "Partido de la U",
+        1.035087719 
+        ],
+        [
+         "Manuel Guillermo Mora Jaramillo",
+        151,
+        96.61016949,
+        "Partido de la U",
+        1.035087719 
+        ],
+        [
+         "Carlos Enrique Soto Jaramillo",
+        152,
+        97.45762712,
+        "Partido de la U",
+        1.026086956 
+        ] 
+        ];
+        data.addColumn('string','Senador');
+        data.addColumn('number','Numero');
+        data.addColumn('number','Asistencia');
+        data.addColumn('string','Partido');
+        data.addColumn('number','Tamaño');
+        data.addRows(datajson);
+        return(data);
+        }
+
+    function drawSeriesChart() {
+
+      var data = dataLoad();
+
+      var columnsTable = new google.visualization.DataTable();
+
+      columnsTable.addColumn('string','Senador');
+      columnsTable.addColumn('number','Numero');
+      columnsTable.addColumn('number','Asistencia');
+      columnsTable.addColumn('string','Partido');
+      columnsTable.addColumn('number','Tamaño');
+
+      var initState= {selectedValues: []};
+      // put the columns into this data table (skip column 0)
+      for (var i = 1; i < data.getNumberOfRows(); i++) {
+
+        if(data.getValue(i, 1) == 'Carlos Enrique Soto Jaramillo'){
+
+          columnsTable.addRow([i, data.getRowLabel(i)]);
+          initState.selectedValues.push(data.getRowLabel(i));
+
+
+        }
+      }
+
+      var options = {
+          colors: ['#3366CC','#DC3912','#FF9900','#109618','#990099','#3B3EAC','#0099C6','#DD4477','#66AA00','#B82E2E','#316395','#994499','#22AA99','#AAAA11','#6633CC','#E67300','#8B0707','#329262','#5574A6','#3B3EAC'],
+        backgroundColor:'#f5f5f5',
+        title: '           Asistencia a Plenarias del Senado de la República (%)',
+        titleTextStyle:{fontSize:20},
+                 hAxis: {title: '',ticks: [0], minValue:-2,maxValue:154},
+          vAxis: {title: 'Porcentaje (%) de asistencia',ticks: [65,70,75,80,85,90,95,100],maxValue:101},
+          hAxis: {title: 'Senador por partido',
+                  textStyle: {
+                    color: 'none'
+                  }},
+          bubble: {
+            textStyle: {
+              fontSize: 12,
+              color: 'none',
+            }
+          }
+      };
+
+      var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
+      chart.draw(data, options);
+
+
+       var rowFilter = new google.visualization.ControlWrapper({
+        controlType: 'CategoryFilter',
+        containerId: 'colFilter_div',
+        dataTable: columnsTable,
+        options: {
+            filterColumnLabel: 'colLabel',
+            ui: {
+                label: 'Columns',
+                allowTyping: false,
+                allowMultiple: true,
+                selectedValuesLayout: 'belowStacked'
+            }
+        },
+        state: initState
+    });
+
+       google.visualization.events.addListener(columnFilter, 'statechange', function () {
+        var state = columnFilter.getState();
+        var row;
+        var columnIndices = [0];
+        for (var i = 0; i < state.selectedValues.length; i++) {
+            row = columnsTable.getFilteredRows([{column: 1, value: state.selectedValues[i]}])[0];
+            columnIndices.push(columnsTable.getValue(row, 0));
+        }
+        // sort the indices into their original order
+        columnIndices.sort(function (a, b) {
+            return (a - b);
+        });
+        chart.setView({columns: columnIndices});
+        chart.draw();
+    });
+
+    columnFilter.draw();
+
+
+    }
+    </script>
+  </head>
+  <body>
+    <div id="series_chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+
+
+
+  
+</html>
