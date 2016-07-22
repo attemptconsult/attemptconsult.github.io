@@ -1,0 +1,73 @@
+<head>
+  <meta charset="utf-8">
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script type="text/javascript">
+
+    google.charts.load('current', {'packages':['line']});
+    google.charts.setOnLoadCallback(drawChart_anho);
+
+    function drawChart_anho() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Año');
+      data.addColumn('number', 'Fundación Universitaria de Ciencias de la Salud');
+      data.addColumn('number', 'Universidad Nacional');
+      data.addColumn('number', 'Universidad de los Andes');
+      data.addColumn('number', 'Universidad CES');
+      data.addColumn('number', 'Universidad Autónoma de Manizales');
+      data.addColumn('number', 'Universidad de Antioquia');
+      data.addColumn('number', 'Universidad del Valle');
+      data.addColumn('number', 'Universidad de la Sabana');
+      data.addColumn('number', 'Corporación Universitaria Lasallista');
+      data.addColumn('number', 'Universidad de Caldas');
+
+      data.addRows([
+['2000',,10.5179,21.01553,20.24291,0.5154639,,,1.121233,0,2.140673],
+['2001',0.7936508,12.18241,23.13354,12.97017,1.251565,11.2249,6.770099,1.019071,0,3.08869],
+['2002',0,13.99846,29.49353,23.51485,2.873563,12.63625,7.411301,3.312212,0,3.832991],
+['2003',0,13.56746,24.89261,19.47308,7.48263,12.25198,7.131968,1.85271,0,2.585386],
+['2004',0,16.18648,27.19432,20.85506,9.637188,12.34154,6.989167,4.868719,1.061571,7.393043],
+['2005',0,20.52609,32.16743,29.50558,6.282125,13.75566,7.931112,4.429482,3.215434,5.708295],
+['2006',0,21.09662,28.69898,24.40775,2.844141,14.21924,8.51007,3.538175,0,5.973578],
+['2007',0,21.21197,31.93543,43.50979,11.26126,13.02879,7.728767,5.065666,0,4.845165],
+['2008',2.533249,24.54964,36.65492,38.55722,7.923033,15.6486,10.08368,4.966887,0,5.791277],
+['2009',1.875,23.56523,42.10354,37.16814,9.596929,15.36291,10.34483,8.169149,3.025719,6.347816],
+['2010',9.457755,26.4306,55.25773,31.65542,8.276533,16.32254,8.843419,9.181573,0.754717,6.436636],
+['2011',5.13992,24.80688,54.63576,27.06486,4.322766,18.88277,9.31436,8.754012,0.788022,6.129233],
+['2012',9.819967,25.33504,44.83758,14.64886,6.240999,18.2484,10.6947,8.920985,3.586801,5.641749],
+['2013',10.02506,27.76272,46.52943,20.82499,,17.6127,11.62468,9.301053,2.612671,9.226038],
+  ]);
+
+      var options = {
+        chart: {
+          title: ''
+        },
+        hAxis: {
+          format: 'none',
+          title: 'Hello',
+          textStyle: {
+            color: '#000000', fontSize: '18'
+          }
+        },
+        titleTextStyle: { color: '#5c5c5c',
+          fontSize: '20',
+        },
+        width: '80%',
+        height: '80%'
+      };
+
+      var chart = new google.charts.Line(document.getElementById('linechart_material'));
+
+      chart.draw(data, options);
+    }
+   
+  // jsFooter
+  </script>
+  
+</head>
+
+
+  <div id="linechart_material" style="width:1300px; height:500px;"></div>
+ 

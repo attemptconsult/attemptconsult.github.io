@@ -1,0 +1,293 @@
+
+<head>
+    <meta charset="utf-8">
+
+    <style>
+      #tooltip{
+        padding:0px 0px 0px 0px !important;
+        margin-bottom: 0px !important;
+        margin-left: 0px !important;
+        align: left;
+      }
+    </style>
+    
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script type="text/javascript">
+
+  google.charts.load('current', {packages: ['corechart', 'bar', 'line', 'geochart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+
+  function drawChart() {
+    var dataTable1 = new google.visualization.DataTable();
+    dataTable1.addColumn('string', 'Country');
+    // Use custom HTML content for the domain tooltip.
+    dataTable1.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
+    dataTable1.addColumn('number', '');
+    dataTable1.addColumn('number', 'Colombia');
+    dataTable1.addColumn('number', 'OCDE');
+    dataTable1.addColumn('number', 'EEUU');
+
+    dataTable1.addRows([
+      ['Fundación Universitaria de Ciencias de la Salud', createCustomHTMLContent('{{site.baseurl}}/public/images/Logos/ciencias.png', 22.9, 3, 1.1), 0, 22.9, 3, 1.1],
+      ['Universidad Nacional', createCustomHTMLContent('{{site.baseurl}}/public/images/Logos/unal.png', 49.4, 20.1, 8), 0, 49.4, 20.1, 8],
+      ['Universidad de los Andes', createCustomHTMLContent('{{site.baseurl}}/public/images/Logos/uniandes.png', 43.4, 35.6, 17.1), 0, 43.4, 35.6, 17.1],
+      ['Universidad CES', createCustomHTMLContent('{{site.baseurl}}/public/images/Logos/ces.png', 89.7, 26, 15.1), 0, 89.7, 26, 15.1],
+      ['Universidad Autónoma de Manizales', createCustomHTMLContent('{{site.baseurl}}/public/images/Logos/autonoma.png', 23.5, 6, 1.5), 0, 23.5, 6, 1.5],
+      ['Universidad de Antioquia', createCustomHTMLContent('{{site.baseurl}}/public/images/Logos/antioquia.png', 34.1, 14.7, 5.5), 0, 34.1, 14.7, 5.5],
+      ['Universidad del Valle', createCustomHTMLContent('{{site.baseurl}}/public/images/Logos/valle.png', 19.7, 8.7, 3.1), 0, 19.7, 8.7, 3.1],
+      ['Universidad de la Sabana', createCustomHTMLContent('{{site.baseurl}}/public/images/Logos/sabana.png', 16.1, 5.3, 1.7), 0, 16.1, 5.3, 1.7],
+      ['Corporación Universitaria Lasallista', createCustomHTMLContent('{{site.baseurl}}/public/images/Logos/lasallista.png', 23.6, 1.1, 0.2), 0, 23.6, 1.1, 0.2],
+      ['Universidad de Caldas', createCustomHTMLContent('{{site.baseurl}}/public/images/Logos/caldas.png', 23.9, 5.4, 1.7), 0, 23.9, 5.4, 1.7],
+    ]);
+
+    var options1 = {
+      title: '',
+      titleTextStyle: {fontSize: '16', bold: 'TRUE', alignment: 'center'},
+      colors: ['transparent', '#C0C0C0', '#8C7853', '#FFD700'],
+      // This line makes the entire category's tooltip active.
+      focusTarget: 'category',
+      // Use an HTML tooltip.
+      tooltip: { isHtml: true },
+      legend: { position: 'right', alignment: 'center' },
+      backgroundColor: { fill: "transparent" },
+      bar: {groupWidth: "85%"},
+      vAxis: {
+          title: 'Publicaciones/1000 estudiantes',
+                titleTextStyle: {fontSize: '14', italic:'FALSE', bold: 'FALSE', alignment: 'center'},
+          textStyle: {
+            italic:'FALSE', color: '#000000', fontSize: '13'
+          }
+        },
+      chartArea: {left:'70', width: '80%', height: '60%', top:'30', backgroundColor: { fill: "#FFFFFF" }},
+      hAxis: {
+        textStyle: {fontSize: '13'}
+      },
+    };
+
+    // Create and draw the visualization.
+    var chart = new google.visualization.ColumnChart(document.getElementById('custom_html_content_div_top'));
+    chart.draw(dataTable1, options1);
+
+    
+    // GRAFICA 2:
+      var data2 = new google.visualization.DataTable();
+      data2.addColumn('string', 'Año');
+      data2.addColumn('number', 'Fundación Universitaria de Ciencias de la Salud');
+      data2.addColumn('number', 'Universidad Nacional');
+      data2.addColumn('number', 'Universidad de los Andes');
+      data2.addColumn('number', 'Universidad CES');
+      data2.addColumn('number', 'Universidad Autónoma de Manizales');
+      data2.addColumn('number', 'Universidad de Antioquia');
+      data2.addColumn('number', 'Universidad del Valle');
+      data2.addColumn('number', 'Universidad de la Sabana');
+      data2.addColumn('number', 'Corporación Universitaria Lasallista');
+      data2.addColumn('number', 'Universidad de Caldas');
+
+      data2.addRows([
+['2000',,10.5179,21.01553,20.24291,0.5154639,,,1.121233,0,2.140673],
+['2001',0.7936508,12.18241,23.13354,12.97017,1.251565,11.2249,6.770099,1.019071,0,3.08869],
+['2002',0,13.99846,29.49353,23.51485,2.873563,12.63625,7.411301,3.312212,0,3.832991],
+['2003',0,13.56746,24.89261,19.47308,7.48263,12.25198,7.131968,1.85271,0,2.585386],
+['2004',0,16.18648,27.19432,20.85506,9.637188,12.34154,6.989167,4.868719,1.061571,7.393043],
+['2005',0,20.52609,32.16743,29.50558,6.282125,13.75566,7.931112,4.429482,3.215434,5.708295],
+['2006',0,21.09662,28.69898,24.40775,2.844141,14.21924,8.51007,3.538175,0,5.973578],
+['2007',0,21.21197,31.93543,43.50979,11.26126,13.02879,7.728767,5.065666,0,4.845165],
+['2008',2.533249,24.54964,36.65492,38.55722,7.923033,15.6486,10.08368,4.966887,0,5.791277],
+['2009',1.875,23.56523,42.10354,37.16814,9.596929,15.36291,10.34483,8.169149,3.025719,6.347816],
+['2010',9.457755,26.4306,55.25773,31.65542,8.276533,16.32254,8.843419,9.181573,0.754717,6.436636],
+['2011',5.13992,24.80688,54.63576,27.06486,4.322766,18.88277,9.31436,8.754012,0.788022,6.129233],
+['2012',9.819967,25.33504,44.83758,14.64886,6.240999,18.2484,10.6947,8.920985,3.586801,5.641749],
+['2013',10.02506,27.76272,46.52943,20.82499,,17.6127,11.62468,9.301053,2.612671,9.226038],
+  ]);
+
+      var options2 = {
+        chart: {
+          title: ''
+        },
+        chartArea: {left:'100', top:'30', width: '10%', height: '60%', backgroundColor: { fill: "#FFFFFF" }},
+        titleTextStyle: {fontSize: '16', bold: 'TRUE', alignment: 'center', color: '#000000', },
+        backgroundColor: { fill: "transparent" },
+        hAxis: {
+          format: 'none',
+          title: 'Año',
+          textStyle: {
+            italic:'FALSE', color: '#000000', fontSize: '13'
+          }
+        },
+        vAxis: {
+          title: 'Publicaciones/1000 estudiantes',
+          titleTextStyle: {fontSize: '14', italic:'FALSE', bold: 'FALSE', alignment: 'center'},
+          textStyle: {
+            color: '#000000', fontSize: '13'
+          }
+        },
+        width: '80%',
+        height: '80%'
+      };
+
+      var chart2 = new google.charts.Line(document.getElementById('linechart_material'));
+
+      chart2.draw(data2, google.charts.Line.convertOptions(options2));
+  
+
+
+  // GRAFICA 3 - MAPA
+
+  var data3 = google.visualization.arrayToDataTable([
+          ['Country', 'Popularity'],
+['Afghanistan', 0.4],
+['Germany', 155.3],
+['Saudi Arabia', 1.5],
+['Argelia', 0.2],
+['Argentina', 94.2],
+['Armenia', 0.1],
+['Australia', 14.8],
+['Austria', 10.2],
+['Azerbaijan', 0.1],
+['Bangladesh', 0.3],
+['Belice', 0],
+['Belorus', 0],
+['Belgica', 11.2],
+['Bolivia', 2.6],
+['Boznia Herzegovina', 0.2],
+['Brazil', 213.6],
+['Brunei', 0.1],
+['Bulgaria', 13.9],
+['Burundi', 0.1],
+['Cambodia', 0],
+['Cameroon', 0.1],
+['Canada', 32.8],
+['Chad', 0.1],
+['Chile', 133.4],
+['China', 9.7],
+['Cyprus', 0.2],
+['North Korea', 0.3],
+['South Korea', 3.7],
+['Ivory Coast', 0.1],
+['Costa Rica', 38.8],
+['Croatia', 1.4],
+['Cuba', 57.4],
+['Denmark', 7.7],
+['Dominica', 0],
+['Ecuador', 13.8],
+['Egypt', 3.1],
+['El Salvador', 0.2],
+['UAE', 1.8],
+['Scotland', 1.9],
+['Slovakia', 0.7],
+['Slovenia', 0.4],
+['Spain', 366.4],
+['Stonia', 0.6],
+['Ethiopia', 0.1],
+['Phillippines', 0.4],
+['Finland', 2.4],
+['Fiji', 0.1],
+['France', 48.8],
+['United Kingdom', 141.3],
+['USA', 1183.9],
+['Wales', 0.1],
+['Greece', 4.5],
+['Guatemala', 0.5],
+['Haiti', 0.1],
+['Honduras', 0.5],
+['Hong Kong', 1],
+['Hungary', 6.8],
+['India', 24.9],
+['Indonesia', 0.4],
+['England', 275.3],
+['Irak', 0.1],
+['Ireland', 9.5],
+['Iran', 0.9],
+['Iceland', 0.4],
+['Israel', 4.9],
+['Italy', 42.9],
+['Jamaica', 0],
+['Japan', 12.9],
+['Jordan', 0],
+['Kazakhstan', 0],
+['Kenya', 1.2],
+['Kuwait', 0.1],
+['Letonia', 0.3],
+['Lithuania', 0.7],
+['Luxembourg', 0.3],
+['Macau', 0.2],
+['Madagascar', 0],
+['Malaysia', 1.6],
+['Malaui', 0.3],
+['Malta', 0.1],
+['Morocco', 0.2],
+['Mauritius', 0.1],
+['Monaco', 0.1],
+['Mongolia', 0.1],
+['Mozambique', 0],
+['Mexico', 148.4],
+['Namibia', 0.1],
+['Nepal', 0.1],
+['Niger', 0.2],
+['Nicaragua', 0.3],
+['Nigeria', 2.8],
+['Norway', 2.8],
+['New Zealand', 14.3],
+['Pakistan', 5.2],
+['Panama', 1.6],
+['Paraguay', 0.2],
+['Netherlands', 255.6],
+['Peru', 24.7],
+['Poland', 9.8],
+['Portugal', 9.7],
+['Puerto Rico', 10.2],
+['Czech Republic', 4.2],
+['Congo', 0.1],
+['Dominican Republic', 0.7],
+['Romania', 5.4],
+['Russia', 7.1],
+['Serbia', 3.4],
+['Seychelles', 0.6],
+['Singapur', 10.1],
+['Sri Lanka', 0],
+['Suaziland', 0.2],
+['South Africa', 2.4],
+['Sweden', 7.2],
+['Swizerland', 43],
+['Thailand', 0.7],
+['Tanzania', 0.1],
+['Tunisia', 0.1],
+['Trinidad and Tobago', 0.2],
+['Turkey', 4.1],
+['Ukraine', 0.7],
+['Uruguay', 6.4],
+['Uzbekistan', 0.1],
+['Venezuela', 98.4],
+['Vietnam', 0.1],
+        ]);
+
+
+    var options3 = {};
+
+    var chart3 = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart3.draw(data3, options3);
+
+  }
+  function createCustomHTMLContent(flagURL, colombia, oecd, eeuu) {
+    return '<div style="padding:5px 5px 5px 5px;">' +
+        '<img src="' + flagURL + '" style="width:85px;height:70px;padding:0px 0px 0px 15px;margin-left: 0px; margin-bottom: 0px"><br/>' +
+        '<table id="tooltip">' + '<tr>' +
+        '<td style="padding-bottom: 1em;align:left"></td>'+ '</tr>' + '<tr>' +
+        '<td><b><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/2000px-Flag_of_Colombia.svg.png" style="width:25px;height:15px;padding:0px 0px 0px 0px;margin-left: 0px; margin-bottom: 0px"><br/> </b></td>'+
+        '<td><b>' + colombia + '</b></td>' + '</tr>' + '<tr>' +
+        '<td><b> <img src="{{site.baseurl}}/public/images/Logos/OECD.png" style="width:25px;height:15px;padding:0px 0px 0px 0px;margin-left: 0px; margin-bottom: 0px"><br/>  </b></td>' +
+        '<td><b>' + oecd + '</b></td>' + '</tr>' + '<tr>' +
+        '<td><b> <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_the_USA.svg" style="width:30px;height:30px;padding:0px 0px 0px 0px;margin-left: 0px; margin-bottom: 0px"><br/> </b></td>' +
+        '<td><b>' + eeuu + '</b></td>' + '</tr>' + '</table>' + '</div>';
+  }
+
+   
+  // jsFooter
+  </script>
+
+</head>
+
+

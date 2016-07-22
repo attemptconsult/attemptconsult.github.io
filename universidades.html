@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+
+<!-- Esto importa los script de los Google Charts -->
+{% include proyecto2/publicaciones_tipo.html %}
+
+
+<body>
+
+<p>
+	En junio del presente año, el <a href="http://www.universidad.edu.co/" target="_blank">Observatorio de la Universidad Colombiana</a> publicó un <a href="http://www.universidad.edu.co/index.php?option=com_content&view=article&id=6954:2016-06-04-16-59-15&catid=2:informe-especial&Itemid=199" target="_blank">informe</a> sobre los resultados de la Convocatoria 737 de 2015 de <a href="http://www.colciencias.gov.co/" target="_blank">Colciencias</a> sobre grupos de investigación. Para el presente proyecto, decidimos ir un poco más allá en la caracterización de la investigación en Colombia y recolectamos información sobre cada uno de los grupos de investigación de las Instituciones de Educación Superior. En particular, creamos la base de datos del número de investigaciones que cada grupo ha realizado en la última década, por país de publicación. 
+</p>
+<p>
+	A pesar de que el número total de grupos de investigación es un indicativo de qué tanto investiga cada IES, esta medida no da mucha información. Es natural que la Universidad Nacional tenga casi cuatro veces más grupos de investigación que la Universidad de los Andes, puesto que la Nacional tiene casi cuatro veces el número de estudiantes. Este indicador no es el apropiado dado que, por simple definición, una universidad pequeña pero excelente ne investigación nunca saldrá en los primeros puestos del ranking publicado. El indicador relevante para dar un debate acertado sobre la calidad de la educación debe ser el número de grupos por estudiante. Incluso, un mejor indicador debería incluir la calidad de estos grupos de investigación. Esta no es tarea sencilla, puesto que comparar la calidad de la investigación a través de áreas del conocimiento requiere de un alto grado de subjetividad sobré qué tipo de publicaciones son equivalentes. Sin embargo, en La Rama Ciudadana decidimos incluir en el debate, no solamente el número de grupos de investigación, sino también el número total de publicaciones de artículos, libros y capítulos de libros de dichos grupos. 
+</p>
+<p>
+	La siguiente gráfica ilustra el número de artículos publicados por cada una de las universidades con mayor número de grupos de investigación por estudiante. Lo primero que se debe resaltar es que las universidades de los Andes, CES y Nacional encabezan el ranking de publicaciones en Colombia, la OCDE y Estados Unidos. Éstas produjeron en la última década el XXXX% de las investigaciones a nivel nacional.
+</p>
+
+<div style="height:30px;"></div>
+<h1 style="text-align: center">Promedio de publicaciones por cada 1000 estudiantes segun pais de publicacion</h1>
+<div id="custom_html_content_div_top" style="width:1100px; height:500px;"></div>
+
+<p>
+	En segundo lugar, se debe resaltar el alto nivel de investigación realizado por la Universidad CES, con el mayor número de publicaciones en Colombia por cada 1000 estudiantes, y el segundo lugar en el número de publicaciones en países de la OCDE y en Estados Unidos, solamente superada por la Universidad de los Andes. 
+</p>
+<p>
+	Finalmente, se puede concluir es que no necesariamente la universidad con mayor número de grupos de invetigación es la que más investiga. La Fundación Universitaria de Ciencias de la Salud, que encabeza el ranking de grupos de investigación, tiene un total de publicaciones bastante menor a otras universidades. 
+</p>
+
+<p>
+	El siguiente gráfico ilustra el número de publicaciones en revistas y libros de países de la OCDE de las universidades colombianas con mayor número de grupos de investigación por estudiante. Las universidades de los Andes y Nacional duplicaron su producción académica entre 2000 y 2013. La Universidad CES tuvo un rápido crecimiento en la segunda mitad de la década pasada y un descenso a partir de 2007.
+</p>
+<div style="height:30px;"></div>
+<h1 style="text-align: center">Publicaciones por cada 1000 estudiantes en revistas de la OCDE: 2000-2013</h1>
+<div id="linechart_material" style="width:1100px; height:500px;margin-left: 50px;"></div>
+
+<div style="height:70px;"></div>
+
+<h2 style="text-align: left">¿En dónde publican las universidades colombianas?</h2>
+<p>
+La siguiente gráfica muestra el número promedio de publicaciones anual de todas las universidades colombianas en revistas de cada país del mundo. Dado que XXXX% de las publicaciones se realizan en Colombia (XXXXX) y Estados Unidos (XXXX), se excluyeron estos países del mapa. Los países donde más publican las IES colombianas son España, Brasil, Reino Unido.
+</p>
+
+<div style="height:30px;"></div>
+<h1 style="text-align: center: ">Publicaciones anuales promedio de universidades colombianas en revistas de cada país (excluyendo Colombia y EEUU): 2000-2013</h1>
+<div id="regions_div" style="width: 900px; height: 600px;margin-left: 50px;"></div>
+
+
+<div style="height:70px;"></div>
+<h2 style="text-align: left">Descarga de datos</h2>
+<p>
+	La base de datos con el número de publicaciones en revistas de cada uno de los paises fue construída mediante un algoritmo que recorrió la página web de cada uno de los grupos de investigación de conciencias. Se puede descargar en formato ".dta" en <a href="files/Articulos_universidades.dta">este vínculo</a>. Los resultados presentados se hicieron por cada 1000 estudiantes en nivel de pregrado matriculados en cada una de las universidades. Estos datos son reportados por cada universidad en el sistema <a href="http://www.mineducacion.gov.co/sistemasdeinformacion/1735/w3-propertyname-2672.html" target="_blank">SNIES</a> del Ministerio de Educación Nacional. Los datos se pueden descargar en <a href="http://www.mineducacion.gov.co/sistemasdeinformacion/1735/w3-article-212400.html" target="_blank">este vínculo</a>.
+</p>
+
+
+<h2 style="text-align: left">Notas técnicas</h2>
+<p>
+Dado que todos los resultados presentados son por estudiante, el ejerciciso se realizó con base en las investigaciones de universidades con más de 1000 alumnos en promedio durante el periodo 2000-2013. Esto se hizo para eliminar el efecto base que existe cuando algunas unviersidades con muy pocos artículos publican. También se eliminaron observaciones de universidades que reportaron en alguno de los periodos tener una cantidad mayor al promedio de 2000-2013 +- dos desviaciones estándar. 
+</p>
+
+
+
+</body>
