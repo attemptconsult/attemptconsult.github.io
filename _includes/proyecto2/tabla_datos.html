@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
+
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Universidad');
+        data.addColumn('number', 'Grupos');
+        data.addColumn('number', 'Artículos');
+        data.addColumn('number', 'Libros');
+        data.addColumn('number', 'Capítulos');
+        data.addColumn('number', 'Estudiantes');
+        data.addColumn('number', 'Publicacion/Estudiante');
+        data.addRows([
+          ['Universidad Nacional de Colombia', 573, 2827, 677, 232, 42905, 87.1],
+['Universidad de Antioquia', 264, 1539, 358, 97, 33896, 58.8],
+['Universidad del Valle', 178, 774, 122, 45, 23900, 39.4],
+['Universidad de los Andes', 153, 687, 293, 86, 13114, 81.3],
+['Pontificia Universidad Javeriana', 118, 711, 220, 79, 27604, 36.6],
+['Universidad Distrital Francisco José de Caldas', 117, 469, 131, 87, 19923, 34.5],
+['Universidad Pedagógica y Tecnológica de Colombia', 106, 254, 20, 11, 22550, 12.6],
+['Universidad Libre', 101, 201, 84, 76, 28008, 12.9],
+['Universidad de Cartagena', 94, 590, 56, 19, 16961, 39.2],
+['Universidad Industrial de Santander', 92, 548, 79, 88, 18717, 38.2],
+['Universidad Tecnológica de Pereira', 84, 338, 39, 15, 13213, 29.7],
+['Universidad Pontificia Bolivariana', 82, 347, 152, 18, 19948, 25.9],
+['Universidad de Caldas', 68, 301, 24, 11, 9926, 33.9],
+['Universidad del Cauca', 66, 275, 97, 22, 13447, 29.3],
+['Universidad Cooperativa de Colombia', 65, 167, 18, 5, 50288, 3.8],
+['Universidad Militar Nueva Granada', 65, 337, 24, 10, 13303, 27.9],
+['Universidad Pedagógica Nacional', 58, 219, 136, 68, 9138, 46.3],
+['Universidad de Nariño', 58, 190, 28, 11, 10223, 22.4],
+['Universidad de La Salle', 54, 234, 159, 20, 14933, 27.7],
+['Universidad del Magdalena', 51, 210, 26, 12, 18640, 13.3],
+['Universidad de La Sabana', 51, 170, 62, 8, 7311, 32.8],
+['Universidad Nacional Abierta y A Distancia', 50, 91, 32, 10, 56447, 2.4],
+['Universidad del Tolima', 49, 165, 23, 17, 28106, 7.3],
+['Universidad de Córdoba', 48, 227, 19, 24, 12991, 20.8],
+['Universidad de Pamplona', 47, 223, 16, 15, 32913, 7.7],
+['Universidad de San Buenaventura', 46, 230, 67, 32, 12971, 25.4],
+['Universidad del Norte', 43, 329, 116, 57, 9793, 51.3],
+['Colegio Mayor de Nuestra Señora del Rosario', 42, 286, 127, 44, 8929, 51.2],
+['Universidad Eafit', 41, 208, 68, 19, 9328, 31.6],
+['Universidad Surcolombiana', 38, 163, 17, 12, 9181, 20.9],
+['Universidad Antonio Nariño', 35, 166, 9, 4, 25171, 7.1],
+['Universidad Francisco de Paula Santander', 34, 66, 3, 15, 20496, 4.1],
+['Universidad Santiago de Cali', 33, 63, 14, 17, 15660, 6],
+['Fundacion Universidad de Bogotá Jorge Tadeo Lozano', 33, 107, 47, 13, 9522, 17.5],
+['Fundacion Universitaria de Ciencias de La Salud', 31, 131, 35, 3, 1995, 84.7],
+['Universidad Popular del Cesar', 31, 73, 68, 16, 13092, 12],
+['Universidad de los Llanos', 31, 67, 13, 5, 5377, 15.8],
+['Universidad Simon Bolívar', 31, 42, 21, 9, 12464, 5.8],
+['Universidad Autónoma de Bucaramanga', 30, 86, 8, 4, 6930, 14.1],
+['Universidad Autónoma de Occidente', 29, 54, 8, 15, 8069, 9.5],
+['Universidad Autónoma del Caribe', 28, 91, 35, 6, 10035, 13.2],
+['Universidad de Medellín', 27, 72, 35, 13, 13043, 9.2],
+['Universidad de Sucre', 27, 109, 34, 5, 4490, 33],
+['Universidad Externado de Colombia', 27, 72, 142, 29, 6036, 40.3],
+['Universidad CES', 26, 263, 61, 7, 2497, 132.6],
+['Universidad de Santander', 23, 35, 7, 4, 8724, 5.3],
+['Politecnico Colombiano Jaime Isaza Cadavid', 22, 86, 12, 5, 12075, 8.5],
+['Universidad Sergio Arboleda', 22, 52, 36, 9, 7817, 12.4],
+['Fundación Universidad Autónoma de Colombia', 21, 40, 15, 11, 8094, 8.2],
+['Universidad Católica de Colombia', 20, 59, 15, 6, 11293, 7.1],
+['Universidad Central', 19, 37, 29, 8, 10514, 7],
+['Universidad de la Amazonia', 18, 56, 11, 21, 7006, 12.6],
+['Universidad de Boyacá - Uniboyacá', 18, 34, 4, 9, 5090, 9.2],
+['Universidad de Manizales', 16, 67, 26, 14, 4031, 26.5],
+['Fundacion Universitaria los Libertadores', 16, 25, 7, 0, 11199, 2.9],
+['Universidad Tecnológica de Bolívar', 15, 61, 44, 11, 3363, 34.5],
+['Universidad Mariana', 15, 23, 19, 3, 5936, 7.6],
+['Universidad Metropolitana', 14, 20, 2, 1, 5028, 4.6],
+['Universidad Tecnológica del Chocó Diego Luis Córdoba', 14, 26, 7, 1, 11654, 2.9],
+['Universidad Icesi', 14, 167, 39, 7, 5071, 42],
+['Universidad del Sinú Elías Bechara Zainum', 13, 16, 10, 6, 6886, 4.6],
+['Universidad Colegio Mayor de Cundinamarca', 13, 48, 14, 8, 4073, 17.2],
+['Escuela Colombiana de Ingeniería Julio Garavito', 13, 42, 2, 1, 4510, 10],
+['Fundacion Universitaria Agraria de Colombia', 12, 7, 2, 2, 3350, 3.3],
+['Instituto Tecnológico Metropolitano', 12, 151, 30, 9, 6262, 30.3],
+['Universidad de Ibagué', 12, 34, 6, 3, 6395, 6.7],
+['Corporación Universitaria Lasallista', 12, 41, 24, 1, 1531, 43.1],
+['Corporación Universitaria Rafael Nuñez', 12, 58, 1, 10, 6067, 11.4],
+['Universidad de Cundinamarca', 11, 28, 9, 4, 11063, 3.7],
+['Universidad Católica de Pereira', 11, 35, 9, 4, 2386, 20.1],
+['Corporacion Universitaria Republicana', 10, 11, 1, 4, 4060, 3.9],
+['Corporacion Universidad Piloto de Colombia', 10, 26, 18, 4, 7881, 6.1],
+['Universidad Católica de Oriente', 10, 18, 7, 3, 3371, 8.3],
+
+        ]);
+        data.setProperty(0, 0, 'style', 'width:100px');
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+
+        table.draw(data, {showRowNumber: true, width: '100%', height: '100%', allowHtml: true});
+
+
+      }
+    </script>
+  </head>
+</html>

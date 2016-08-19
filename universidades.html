@@ -13,7 +13,7 @@ layout: default
 <h2 style="text-align: left">¿Cuáles universidades investigan más en Colombia?</h2>
 
 <p>
-	En junio del presente año, el <a href="http://www.universidad.edu.co/" target="_blank">Observatorio de la Universidad Colombiana</a> publicó un <a href="http://www.universidad.edu.co/index.php?option=com_content&view=article&id=6954:2016-06-04-16-59-15&catid=2:informe-especial&Itemid=199" target="_blank">informe</a> sobre los resultados de la Convocatoria 737 de 2015 de <a href="http://www.colciencias.gov.co/" target="_blank">Colciencias</a>. El informe hace un detallado resumen del número total de grupos de investigación de cada institución educativa. En el presente proyecto, La Rama Ciudadana decidió aportar a este debate de la caracterización de la investigación en Colombia. Para esto, recolectamos información sobre el total y el destino de las publicaciones académicas de cada uno de los grupos de investigación registrados por las Instituciones de Educación Superior (IES) en Colombia. La recolección de datos se hizo mediante un algoritmo que visitó la página web de cada uno de los grupos de investigación en la plataforma <a href="http://www.colciencias.gov.co/scienti" target="_blank">ScienTI</a> de Colciencias y recopiló el número y destino de las publicaciones del grupo desde 2000 (por ejemplo, <a href="http://scienti.colciencias.gov.co:8080/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000000286" target="_blank">ésta</a> es la página web del grupo de Astronomía, Astofísica y Cosmología de la Universidad Nacional). La base de datos se puede descargar al final de esta página.
+	En junio del presente año, el <a href="http://www.universidad.edu.co/" target="_blank">Observatorio de la Universidad Colombiana</a> publicó un <a href="http://www.universidad.edu.co/index.php?option=com_content&view=article&id=6954:2016-06-04-16-59-15&catid=2:informe-especial&Itemid=199" target="_blank">informe</a> sobre los resultados de la Convocatoria 737 de 2015 de <a href="http://www.colciencias.gov.co/" target="_blank">Colciencias</a>. El informe hace un detallado resumen del número total de grupos de investigación de cada institución educativa. En el presente proyecto, La Rama Ciudadana decidió aportar a este debate de la caracterización de la investigación en Colombia. Para esto, recolectamos información sobre el total y el destino de las <b>publicaciones académicas</b> de cada uno de los grupos de investigación registrados por las Instituciones de Educación Superior (IES) en Colombia. La recolección de datos se hizo mediante un algoritmo que visitó la página web de cada uno de los grupos de investigación en la plataforma <a href="http://www.colciencias.gov.co/scienti" target="_blank">ScienTI</a> de Colciencias y recopiló el número y destino de las publicaciones del grupo desde 2000 (por ejemplo, <a href="http://scienti.colciencias.gov.co:8080/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000000286" target="_blank">ésta</a> es la página web del grupo de Astronomía, Astofísica y Cosmología de la Universidad Nacional). La base de datos se puede descargar al final de esta página.
 </p>
 <p>
 	Todos los resultados presentados a continuación son por cada mil estudiantes. ¿Por qué es importante analizar los datos por cada 1000 estudiantes? Es natural que, por ejemplo, la Universidad Distrial tenga más del doble de grupos de investigación que la Universidad de Nariño, puesto que la Distrital tiene más del doble de estudiantes. Si no se hace la normalización por cada 1000 estudiantes, las universidades más grandes siempre ocuparían los primeros puestos, mientras que una universidad pequeña pero excelente en investigación nunca saldría en la punta del ranking. 
@@ -26,7 +26,7 @@ layout: default
 </p>
 
 <div style="height:30px;"></div>
-<h1 style="text-align: center">Gráfica 1 - Publicaciones por cada 1000 estudiantes segun lugar de publicación - promedio 2000-2013</h1>
+<h1 style="text-align: center">Gráfica 1 - Publicaciones de cada IES en <u>Colombia, OCDE y EEUU</u> por cada 1000 estudiantes - promedio 2000-2013</h1>
 <div id="custom_html_content_div_top" style="width:1100px; height:500px;"></div>
 
 <p>
@@ -49,7 +49,7 @@ Las universidades de los Andes y Nacional duplicaron su producción académica e
 <div style="height:20px;"></div>
 
 <p>
-La siguiente gráfica muestra el número promedio de publicaciones anual de todas las universidades colombianas en revistas de cada país del mundo. Dado que XXXX% de las publicaciones se realizan en Colombia (XXXXX) se excluyeron estos países del mapa. Los países donde más publican las IES colombianas son España, Brasil, Reino Unido.
+La siguiente gráfica muestra el número promedio de publicaciones anual de todas las universidades colombianas en revistas de cada país del mundo. Dado que la mayoría de las publicaciones se realizan en Colombia, se excluyó este país del mapa. Los países donde más publican las IES colombianas son España, Brasil, Reino Unido.
 </p>
 
 <div style="height:30px;"></div>
@@ -58,9 +58,19 @@ La siguiente gráfica muestra el número promedio de publicaciones anual de toda
 
 
 <div style="height:70px;"></div>
+<p>
+La siguiente tabla muestra las estadísticas para cada universidad en el año 2013. Cabe aclarar que los datos no coinciden con los presentados en las gráficas, pues éstas representan el promedio entre los años 2000-2013. <b>Haga click</b> en el título de cualquier columna para ordenar la tabla.
+</p>
+
+<div style="height:30px;"></div>
+<h1 style="text-align: center: ">Tabla 1 - Grupos de investigación, publicaciones y número de estudiantes de cada universidad en 2013</h1>
+<div id="table_div"></div>
+
+
+<div style="height:70px;"></div>
 <h2 style="text-align: left">Descarga de datos</h2>
 <p>
-	La base de datos con el número de publicaciones en revistas de cada uno de los paises fue construída mediante un algoritmo que recorrió la página web de cada uno de los grupos de investigación de conciencias. Se puede descargar en formato ".dta" en <a href="files/Articulos_universidades.dta">este vínculo</a>. Los resultados presentados se hicieron por cada 1000 estudiantes en nivel de pregrado matriculados en cada una de las universidades. Estos datos son reportados por cada universidad en el sistema <a href="http://www.mineducacion.gov.co/sistemasdeinformacion/1735/w3-propertyname-2672.html" target="_blank">SNIES</a> del Ministerio de Educación Nacional. Los datos se pueden descargar en <a href="http://www.mineducacion.gov.co/sistemasdeinformacion/1735/w3-article-212400.html" target="_blank">este vínculo</a>.
+	La base de datos con el número de publicaciones en revistas de cada uno de los paises fue construída mediante un algoritmo que recorrió la página web de cada uno de los grupos de investigación de conciencias. Se puede descargar en formato ".dta" en <a href="_includes/proyecto2/Articulos_universidades.dta">este vínculo</a>. Los resultados presentados se hicieron por cada 1000 estudiantes en nivel de pregrado matriculados en cada una de las universidades. Estos datos son reportados por cada universidad en el sistema <a href="http://www.mineducacion.gov.co/sistemasdeinformacion/1735/w3-propertyname-2672.html" target="_blank">SNIES</a> del Ministerio de Educación Nacional. Los datos se pueden descargar en <a href="http://www.mineducacion.gov.co/sistemasdeinformacion/1735/w3-article-212400.html" target="_blank">este vínculo</a>.
 </p>
 
 
