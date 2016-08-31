@@ -1,0 +1,77 @@
+
+<head>
+    <meta charset="utf-8">
+
+    <style>
+      #tooltip{
+        padding:0px 0px 0px 0px !important;
+        margin-bottom: 0px !important;
+        margin-left: 0px !important;
+        align: left;
+      }
+    </style>
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['Dept.', 'Reforestación CIF (ha)', 'Deforestación (ha)'],
+          ['Caq.', 7, 29245],
+      ['Ant.', 1807, 21032], 
+      ['Meta', 826, 13727], 
+      ['Putu.', 0 ,11106], 
+      ['Chocó', 17, 10353],
+      ['N. Sant.',   0,      8283], 
+      ['Guav.',  16,   6892], 
+      ['Bol.',   135,    4860], 
+      ['Nar.',   0,      4178], 
+      ['Sant.',  80,   4110], 
+      ['Ara.',   0,      3913], 
+      ['Casa.',  186,    3450], 
+      ['Córd.',  1023,   2734], 
+      ['Vich.',  6287,   2589], 
+      ['Vaup.',  0,      1967], 
+      ['Amaz.',  0,      1723], 
+      ['Cauca',  0,      1707], 
+      ['Magd.',  847,    1427], 
+      ['Guai.',  0,      1300], 
+      ['Valle',  28, 1105], 
+      ['Caldas',   190,    874], 
+      ['Cesar',  166,    786],
+      ['Guaj.',  0,      651], 
+      ['Boya.',  3,    511], 
+      ['Sucre',  0,      440], 
+      ['Risa.',  28,   413], 
+      ['Huila',  0,    386], 
+      ['Tol.',   116,    295], 
+      ['Cund.',  0,      191], 
+      ['Atl.',   0,      55], 
+      ['Quin.',  0,      50], 
+      ['S. And.', 0, 0]     
+        ]);
+
+    var options = {
+          width: 900,
+          chart: {
+            title: '', 
+          },
+          axes: {
+            y: {
+              label: 'Deforestación (ha)' // Left y-axis.
+            }
+          }
+        };
+
+      var chart = new google.charts.Bar(document.getElementById('dual_y_div'));
+      chart.draw(data, options);
+    };
+    </script>
+
+</head>
+
+
+
