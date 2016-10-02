@@ -2,6 +2,29 @@
 layout: default
 ---
 
+<head>
+<style>
+
+@media screen and (max-width:600px) and (min-width:10px)
+{
+
+  #tab1 {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width:600px)
+{
+  #tab2 {
+    display: none;
+  }
+
+}
+
+</style>
+</head>
+
 
 <body>
 <div style="height:30px;"></div>
@@ -23,7 +46,7 @@ layout: default
 
 <div style="padding-bottom: 30px;"> </div>
 
-<table style="width:100%">
+<table style="width:100%" id="tab1" >
   <tr>
     <th>
 		<h3 style="text-align: left; width:420px;padding-bottom: 30px;">Mapa 1- Índice de riesgo de victimización 2014</h3>
@@ -35,6 +58,23 @@ layout: default
     </th> 
   </tr>
 </table>
+
+<table style="width:100%" id="tab2" >
+  <tr>
+    <th>
+		<h3 style="text-align: left; width:420px;padding-bottom: 30px;">Mapa 1- Índice de riesgo de victimización 2014</h3>
+		{% include proyecto_paz/victimas.html %}
+    </th>
+	</tr>
+  <tr>
+    <th>
+    	<h3 style="text-align: left; width:100%">Mapa 2- Número de víctimas de las FARC por cada 1000 habitantes 2001-2015</h3>
+		{% include proyecto_paz/nocheyniebla.html %}
+    </th> 
+  </tr>
+</table>
+
+
 
 <div style="padding-bottom: 50px;"> </div>
 
