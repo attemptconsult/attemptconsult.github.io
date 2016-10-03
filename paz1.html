@@ -32,19 +32,8 @@ layout: default
 <h2 style="text-align: left"> ¿Qué tanto apoyo tiene el Acuerdo de Paz con las FARC en los municipios que han sido más afectados por el conflicto?
 </h2>
 
-<h3 style="text-align: left"> Análisis de los resultados electorales (3 de octubre): 
-</h3> 
-
-<p align="justify"> Próximamente... </p>
-
-<h3 style="text-align: left"> Los municipios más afectados por el conflicto:
-</h3> 
-
-
-<p align="justify"> Los siguientes gráficos ilustran los municipios de Colombia más afectados por el conflicto armado, de acuerdo con dos medidas de victimización. La primera medida fue construida por la Unidad para la Atención y Reparación Integral a las Víctimas (IRV) con apoyo de expertos de la Universidad Santo Tomás. En ella se hizo un cálculo del riesgo de victimización como función de las amenazas y vulnerabilidad de cada municipio en Colombia a diferentes formas de violencia. Cabe resaltar que el IRV fue construido contando a todas las víctimas del conflicto y no solamente a las víctimas de las FARC. La segunda fuente de datos es el portal <a href="http://www.nocheyniebla.org/"  target="_blank"> Noche y Niebla</a>, que recolecta datos de acciones violentas realizadas por grupos armados en Colombia. En este caso, logramos diferenciar a las víctimas de las FARC y presentamos un conteo del número de víctimas por cada 1000 habitantes. Los mapas 1 y 2 presentan los resultados de acuerdo a las dos medidas descritas: 
+<p align="justify"> Los siguientes gráficos ilustran los municipios de Colombia más afectados por el conflicto armado de acuerdo con dos medidas de victimización, y los resultados del plebiscito del 2 de octubre. 
 </p>
-
-<div style="padding-bottom: 30px;"> </div>
 
 <table style="width:100%" id="tab1" >
   <tr>
@@ -55,6 +44,14 @@ layout: default
     <th>
     	<h3 style="text-align: left; width:100%">Mapa 2- Número de víctimas de las FARC por cada 1000 habitantes 2001-2015</h3>
 		{% include proyecto_paz/nocheyniebla.html %}
+    </th> 
+  </tr>
+  <tr>
+	<th>
+		<div style="padding-bottom: 30px;"> </div>
+    
+    	<h3 style="text-align: left; width:100%">Mapa 3- % de votos por el Sí en el plebiscito</h3>
+		{% include proyecto_paz/plebiscito.html %}
     </th> 
   </tr>
 </table>
@@ -72,23 +69,39 @@ layout: default
 		{% include proyecto_paz/nocheyniebla.html %}
     </th> 
   </tr>
+  <tr>
+    <th>
+    	<h3 style="text-align: left; width:100%">Mapa 3- % de votos por el Sí en el plebiscito</h3>
+		{% include proyecto_paz/plebiscito.html %}
+    </th> 
+  </tr>
 </table>
 
+</h3> 
 
+<p align="justify"> La primera medida fue construida por la Unidad para la Atención y Reparación Integral a las Víctimas (IRV) con apoyo de expertos de la Universidad Santo Tomás. En ella se hizo un cálculo del riesgo de victimización como función de las amenazas y vulnerabilidad de cada municipio en Colombia a diferentes formas de violencia. Cabe resaltar que el IRV fue construido contando a todas las víctimas del conflicto y no solamente a las víctimas de las FARC. La segunda fuente de datos es el portal <a href="http://www.nocheyniebla.org/"  target="_blank"> Noche y Niebla</a>, que recolecta datos de acciones violentas realizadas por grupos armados en Colombia. En este caso, logramos diferenciar a las víctimas de las FARC y presentamos un conteo del número de víctimas por cada 1000 habitantes. 
+</p>
 
-<div style="padding-bottom: 50px;"> </div>
+<p align="justify"> Es interesante ver cómo el centro del país muestra una tasa baja de victimización que está asociada con un bajo apoyo al Sí en el plebiscito. Por el contrario, regiones tradicionalmente afectadas por el conflicto con las FARC como el Cauca, Nariño, Caquetá y partes de Antioquia, muestran todo lo contrario. Esta correlación se mantiene en casi todo el territorio nacional excepto en regiones de la costa atlántica donde hubo un alto apoyo al sí en el plebiscito y baja intensidad del conflicto. Estas correlaciones se mantienen en las dos fuentes de datos pero dada la cobertura geográfica se aprecian mejor en el IRV. </p>
+
+<div style="padding-bottom: 30px;"> </div>
+
+<div style="height:30px;"></div>
+
+<h2 style="text-align: left"> Previo al 2 de octubre:
+</h2>
 
 
 <p align="justify"> En La Rama Ciudadana tratamos de hacer una aproximación a las votaciones del plebiscito, analizando el apoyo a Juan Manuel Santos en las elecciones presidenciales de 2014 de acuerdo con información electoral de la Registraduría. Nos pareció relevante analizar la elección de 2014 porque la carrera presidencial tuvo como gran protagonista al proceso de paz. Como menciona el <a href="http://www.semana.com/nacion/articulo/proceso-de-paz-resumen-del-ano-2014/412072-3"  target="_blank"> artículo</a> de la revista Semana de diciembre de 2014: “Las elecciones presidenciales se convirtieron en un referendo sobre la Mesa de negociaciones y el país literalmente se dividió en dos, entre quienes querían continuar y los que buscaban su fin”. Aunque no es un predictor perfecto, creemos que puede dar pistas sobre los resultados del plebiscito. Utilizamos los datos de la segunda vuelta, donde el apoyo a Santos es simplemente el número de votos favorables sobre el total de votos en el municipio. Los resultados están en el siguiente mapa: 
 <div style="padding-bottom: 30px;"> </div>
 
- <h3 style="text-align: left">Mapa 3- Porcentaje de votos por Juan Manuel Santos en la segunda vuelta de las elecciones presidenciales del 2014</h3>
+ <h3 style="text-align: left">Mapa 4 - Porcentaje de votos por Juan Manuel Santos en la segunda vuelta de las elecciones presidenciales del 2014</h3>
 <div align="center">  {% include proyecto_paz/elecciones.html %} </div>
 </p>
 
 <div style="padding-bottom: 50px;"> </div>
 
-<p align="justify"> Es interesante ver cómo el centro del país muestra una tasa baja de victimización que está asociada con un bajo apoyo a Santos. Por el contrario, en regiones tradicionalmente afectadas por el conflicto con las FARC como el Cauca, Nariño, Caquetá y partes de Antioquia, muestran todo lo contrario. Esta correlación se mantiene en casi todo el territorio nacional excepto en la costa atlántica donde hubo un alto apoyo a Santos y baja intensidad del conflicto. Estas correlaciones se mantienen en las dos fuentes de datos pero dada la cobertura geográfica se aprecian mejor en el IRV. </p>
+
 
 <p align="justify"> Esta información puede contribuir a predecir (a grandes rasgos) los lugares donde el plebiscito tendrá más apoyo. Existen muchos factores que pueden estar generando estos resultados como el voto coaccionado en municipios más violentos, clientelismo o que las víctimas realmente apoyan más al proceso. </p>  
 
